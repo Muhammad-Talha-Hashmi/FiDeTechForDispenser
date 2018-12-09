@@ -1,0 +1,106 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+
+
+    android:background="@color/colorGrass">
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="match_parent"
+        android:layout_height="148dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="0dp"
+        android:layout_marginLeft="0dp"
+        android:layout_marginBottom="72dp"
+        android:paddingLeft="0dp"
+        android:paddingTop="10dp"
+        android:paddingRight="0dp"
+        android:paddingBottom="10dp"
+        android:singleLine="true"
+        android:text="@string/data_panel"
+        android:textAlignment="center"
+        android:textColor="@android:color/black"
+        android:textSize="12dp" />
+
+    <TextView
+        android:id="@+id/tvTimer"
+        android:layout_width="wrap_content"
+        android:layout_height="100dp"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="165dp"
+        android:background="@drawable/rounded_textview"
+        android:fontFamily="sans-serif-condensed"
+        android:padding="30dp"
+        android:text="60"
+        android:textAlignment="center"
+        android:textColor="@android:color/holo_red_dark"
+        android:textSize="25sp" />
+
+    <Button
+        android:id="@+id/btnGo"
+        android:layout_width="wrap_content"
+        android:layout_height="100dp"
+        android:layout_alignTop="@+id/tvTimer"
+        android:layout_centerHorizontal="true"
+        android:background="@drawable/rounded_textview"
+        android:fontFamily="sans-serif-condensed"
+        android:onClick="onClickStart"
+        android:padding="30dp"
+        android:text="Go!"
+        android:textAlignment="center"
+        android:textColor="@android:color/holo_red_dark"
+        android:textSize="25sp" />
+
+    <TextView
+        android:id="@+id/tvResult"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignEnd="@+id/btnGo"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="129dp"
+        android:layout_marginEnd="-3dp"
+        android:text="Result in:"
+        android:textColor="@android:color/background_dark"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        tools:ignore="RtlCompat" />
+
+    <TextView
+        android:id="@+id/tvSensorData"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="128dp"
+        android:layout_marginLeft="128dp"
+        android:layout_marginTop="278dp"
+        android:text="@string/sensor_data"
+        android:textColor="@android:color/background_dark"
+        android:textSize="24sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/tvSeconds"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/tvTimer"
+        android:layout_marginStart="-62dp"
+        android:layout_marginLeft="-62dp"
+        android:layout_marginBottom="13dp"
+        android:text="@string/seconds" />
+
+    <TextView
+        android:id="@+id/tvStatus"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:text="Device not Connected!" />
+</RelativeLayout>
+
